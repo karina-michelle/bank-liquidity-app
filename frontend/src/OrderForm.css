@@ -1,0 +1,84 @@
+.order-form-container {
+    background: white;
+}
+
+.tabs-header {
+    display: flex;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 20px;
+}
+
+.tabs-header button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    transition: all 0.2s;
+}
+
+.tabs-header button:hover {
+    background-color: #f9f9f9;
+}
+
+.tabs-header button.active {
+    color: #2563eb; /* Blue */
+    border-bottom: 2px solid #2563eb;
+    background-color: #eff6ff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.form-group select, 
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.note {
+    font-size: 11px;
+    color: #888;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.order-preview {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-left: 3px solid #2563eb;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #1d4ed8;
+}

@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "liquidity-dashboard"
+version = "0.1.0"
+description = "Bank Liquidity Dashboard"
+requires-python = ">=3.9"
+authors = [
+  { name="Karina Michelle", email="kacuadrado@gmail.com" },
+]
+dependencies = [
+    "apscheduler",
+    "fastapi",
+    "uvicorn[standard]",
+    "sqlalchemy",
+    "python-dotenv",
+    "httpx",
+    "pydantic"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]

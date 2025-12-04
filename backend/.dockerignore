@@ -1,0 +1,16 @@
+# Ignore local database (Docker will create a fresh one or use the volume)
+liquidity.db
+
+# Ignore compiled python files
+__pycache__
+*.pyc
+*.pyo
+
+# Ignore virtual environments
+venv
+env
+.env
+
+# Ignore git
+.git
+.gitignore

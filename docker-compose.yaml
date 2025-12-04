@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  backend:
+    build: ./backend
+    ports: 
+      - "8001:8001"
+    volumes:
+      - ./backend:/app/backend
+    environment:
+      - DATABASE_URL=sqlite:////app/backend/liquidity.db
+      - FRONTEND_ORIGIN=http://localhost:3000
+      - PYTHONUNBUFFERED=1
+
+  frontend:
+    build: ./frontend
+    ports: 
+      - "3000:3000"
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend/src:/app/src
+      - ./frontend/public:/app/public
+      - /app/node_modules
+    environment:
+      - CI=true
+      - CHOKIDAR_USEPOLLING=true
