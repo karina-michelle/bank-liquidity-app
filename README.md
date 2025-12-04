@@ -14,7 +14,7 @@ Run this application using Docker Compose.
 
 **Clone the repository**
    ```bash
-   git clone [https://github.com/karina-michelle/bank-liquidity-app.git](https://github.com/karina-michelle/bank-liquidity-app.git)
+   git clone https://github.com/karina-michelle/bank-liquidity-app.git
    cd bank-liquidity-app
    ```
 
