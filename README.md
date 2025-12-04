@@ -23,7 +23,13 @@ Run this application using Docker Compose.
 ### 4. Access the App
 Navigate to http://localhost:3000 in your browser
 ### 5. Troubleshooting
-* If Docker fails with "permission denied":
-    ```bash
-    chmod +x backend/entrypoint.sh
-    ```
+1. Backend container fails with `"./entrypoint.sh : no such file or directory"` ? It's a Windows line endings problem.
+   To solve:
+   * Change line endings for file `backend/entrypoint.sh` in VS Code from CRLF to LF
+   
+   OR
+   * Prevent Git from automatically converting LF to CRLF, run this in your terminal:
+     ```bash
+      git config --global core.autocrlf input
+      ```
+   Then rebuild the container.
