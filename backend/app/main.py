@@ -231,9 +231,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 @app.get("/api/health")
 def health_check():
     return {"status": "ok"}
+
 
 @app.get("/api/yields", response_model=list[YieldPoint])
 async def get_yield_curve():
